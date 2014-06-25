@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Persee Search</Name>
+  <Author>Karen Okamoto, IDS Project</Author>
+  <Version>1.0</Version>
+  <Active>True</Active>
+  <Type>Addon</Type>
+  <Description>Searches Persee for ISxN, Title, and Author for loans and articles.</Description>
+  <Forms>
+    <Form>FormRequest</Form>
+  </Forms>
+  <Settings>
+    <Setting name="AutoSearch" value="true" type="boolean">
+      <Description>Determines whether or not the search should be done automatically when the request is opened.</Description>
+    </Setting>
+    <Setting name="StartwithTitle" value="false" type="boolean">
+      <Description>Determines whether or not the Addon should start the search with item Title.</Description>
+    </Setting>
+	<Setting name="StartwithAuthor" value="false" type="boolean">
+      <Description>Determines whether or not the Addon should start the search with item Author.</Description>
+    </Setting>
+	<Setting name="StartwithISxN" value="false" type="boolean">
+      <Description>Determines whether or not the Addon should start the search with item ISxN.</Description>
+    </Setting>
+	
+  </Settings>
+  <Files>
+    <File>PerseeSearch.lua</File>
+  </Files>
+</Configuration>
